@@ -28,3 +28,10 @@ document.getElementById("cta-email").addEventListener("click", () => {
 
 // Load home page by default
 navigateToPage('home');
+
+
+// CTA Email Button
+const ctaButton = document.getElementById("cta-email");
+ctaButton.addEventListener("click", () => {
+  window.location.href = "mailto:fayejstover@gmail.com";
+});
