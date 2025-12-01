@@ -66,7 +66,7 @@ body {
 }
 
 .nav-link:hover {
-  opacity: 0.6;
+  opacity: 0.65;
 }
 
 /* Toggle Button - Add your toggle-styles.css content here */
@@ -90,7 +90,7 @@ body {
 
 .hero-section p {
   font-size: 18px;
-  color: rgba(34, 34, 34, 0.6);
+  color: rgba(34, 34, 34, 0.65);
   line-height: 1.3;
 }
 
@@ -140,7 +140,7 @@ body {
 }
 
 .cta-button:hover {
-  opacity: 0.6;
+  opacity: 0.65;
 }
 
 .arrow-icon {
@@ -199,18 +199,18 @@ body {
 }
 
 .work-company:hover {
-  opacity: 0.6;
+  opacity: 0.65;
 }
 
 .work-role {
   font-style: italic;
   font-size: 18px;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.65);
 }
 
 .work-date {
   font-size: 18px;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.65);
   text-align: right;
   width: 180px;
 }
@@ -252,13 +252,13 @@ body {
 .connect-item a {
   font-style: italic;
   font-size: 18px;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.65);
   text-decoration: none;
   transition: opacity 0.2s;
 }
 
 .connect-item a:hover {
-  opacity: 0.6;
+  opacity: 0.65;
 }
 
 /* Play Page */
@@ -276,7 +276,7 @@ body {
 
 .play-header p {
   font-size: 18px;
-  color: rgba(34, 34, 34, 0.6);
+  color: rgba(34, 34, 34, 0.65);
 }
 
 /* Projects Grid */
@@ -321,7 +321,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.65);
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
@@ -347,7 +347,7 @@ body {
 }
 
 .project-card:hover {
-  opacity: 0.6;
+  opacity: 0.65;
 }
 
 .project-image {
@@ -412,17 +412,17 @@ body {
 .project-role {
   font-style: italic;
   font-size: 18px;
-  color: rgba(34, 34, 34, 0.6);
+  color: rgba(34, 34, 34, 0.65);
 }
 
 .project-year {
   font-size: 18px;
-  color: rgba(34, 34, 34, 0.6);
+  color: rgba(34, 34, 34, 0.65);
 }
 
 .project-description {
   font-size: 18px;
-  color: rgba(34, 34, 34, 0.6);
+  color: rgba(34, 34, 34, 0.65);
   line-height: 1.3;
 }
 
@@ -438,7 +438,7 @@ body {
   border-radius: 100px;
   border: 1px solid rgba(34, 34, 34, 0.2);
   font-size: 14px;
-  color: rgba(34, 34, 34, 0.6);
+  color: rgba(34, 34, 34, 0.65);
 }
 
 .play-footer {
