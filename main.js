@@ -17,15 +17,18 @@ function navigateToPage(pageName) {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-document.getElementById("cta-email").addEventListener("click", function () {
-  window.location.href = "mailto:fayejstover@gmail.com";
-});
-
 navLinks.forEach(link => {
   link.addEventListener('click', function() {
     const targetPage = this.getAttribute('data-page');
     navigateToPage(targetPage);
   });
+});
+
+// CTA Email Button
+const ctaButton = document.getElementById("cta-email");
+
+ctaButton.addEventListener("click", () => {
+  window.location.href = "mailto:fayejstover@gmail.com";
 });
 
 
