@@ -5,14 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Faye Stover</title>
   <link rel="stylesheet" href="css/style.css">
-</head>
+  <link rel="stylesheet" href="css/toggle-styles.css">
 </head>
 <body>
   <!-- Home Page -->
   <div id="home-page" class="page active">
     <nav class="nav-container">
-      <button class="nav-link" data-page="home">Home</button>
-      <button class="nav-link" data-page="play">Play</button>
+      <div class="nav-spacer"></div>
+      <div class="nav-links">
+        <button class="nav-link" data-page="home">Home</button>
+        <button class="nav-link" data-page="play">Play</button>
+      </div>
+        <button class="toggle-button" data-state="on" id="toggleButton">
+          <div class="toggle-content">
+            <p class="toggle-text">Motion on</p>
+            <div class="toggle-knob"></div>
+          </div>
+        </button>
     </nav>
 
     <div class="hero-section">
@@ -26,11 +35,12 @@
 
       <p>I am currently open to full time roles.</p>
 
-      <a href="mailto:fayejstover@gmail.com?subject=Let's build something" class="cta-button" id="cta-email">
+      <button class="cta-button" id="cta-email">
+        
         Lets build something
         <img src="images/arrow.jpg" alt="" class="arrow-icon">
-      </a>
-      </div>
+      </button>
+    </div>
 
 <div class="work-section">
   <h2>Work Experience</h2>
@@ -81,8 +91,17 @@
   <!-- Play Page -->
 <div id="play-page" class="page">
   <nav class="nav-container">
-    <button class="nav-link" data-page="home">Home</button>
-    <button class="nav-link" data-page="play">Play</button>
+    <div class="nav-spacer"></div>
+    <div class="nav-links">
+      <button class="nav-link" data-page="home">Home</button>
+      <button class="nav-link" data-page="play">Play</button>
+    </div>
+      <button class="toggle-button" data-state="on" id="toggleButton2">
+        <div class="toggle-content">
+          <p class="toggle-text">Motion on</p>
+          <div class="toggle-knob"></div>
+        </div>
+      </button>
   </nav>
 
   <div class="play-header">
@@ -91,18 +110,70 @@
   </div>
 
   <div class="projects-grid">
-    <div class="project-column">
-      <img src="images/col1.png" alt="">
+    <div class="project-umn">
+      <div class="gallery-item">
+        <img src="images/1.png" alt="">
+        <div class="image-overlay">
+          <p class="overlay-text">pencil sketch, Madrid</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/2.png" alt="">
+        <div class="image-overlay">
+          <p class="overlay-text">gel pen, architecture</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/3.png" alt="">
+        <div class="image-overlay">
+          <p class="overlay-text">pencil sketch, Malaga</p>
+        </div>
+      </div>
     </div>
-    <div class="project-column">
-      <img src="images/col2.png" alt="">
+    <div class="project-umn">
+      <div class="gallery-item">
+        <img src="images/4.png" alt="">
+        <div class="image-overlay">
+          <p class="overlay-text">pen, robotics</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/5.png" alt="">
+        <div class="image-overlay">
+          <p class="overlay-text">digital, urban architecture study</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/6.png" alt="">
+        <div class="image-overlay">
+          <p class="overlay-text">pencil sketch, Marrakesh</p>
+        </div>
+      </div>
     </div>
-    <div class="project-column">
-      <img src="images/col3.png" alt="">
+    <div class="project-umn">
+      <div class="gallery-item">
+        <img src="images/7.png" alt="">
+        <div class="image-overlay">
+          <p class="overlay-text">acrylic paint</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/8.png" alt="">
+        <div class="image-overlay">
+          <p class="overlay-text">gel pen</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/9.png" alt="">
+        <div class="image-overlay">
+          <p class="overlay-text">pencil</p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
   <script src="main.js"></script>
+  <script src="toggle-script.js"></script>
 </body>
 </html>

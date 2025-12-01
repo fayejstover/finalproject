@@ -1,4 +1,8 @@
 /* GLOBAL */
+:root {
+  --gallery-gap: 24px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -32,10 +36,21 @@ body {
 
 /* Navigation */
 .nav-container {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 24px 24px 12px;
+  gap: 24px;
+}
+
+.nav-spacer {
+  /* Empty spacer for left side */
+}
+
+.nav-links {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 24px 24px 12px;
   gap: 75px;
 }
 
@@ -52,6 +67,12 @@ body {
 
 .nav-link:hover {
   opacity: 0.6;
+}
+
+/* Toggle Button - Add your toggle-styles.css content here */
+.toggle-button {
+  justify-self: end;
+  /* Placeholder - will be styled by toggle-styles.css */
 }
 
 /* Hero */
@@ -265,19 +286,59 @@ body {
   padding: 0 24px;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 24px;
+  gap: 24px
 }
 
 .project-column {
   display: flex;
   flex-direction: column;
-  gap: 24px;
 }
 
 .project-column img {
   width: 100%;
   height: auto;
   display: block;
+}
+
+/* Gallery Items with Hover Overlay */
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  gap: 24px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .image-overlay {
+  opacity: 1;
+}
+
+.overlay-text {
+  font-size: 18px;
+  color: #ffffff;
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
 }
 
 .project-card {
@@ -297,6 +358,7 @@ body {
   border-radius: 12px;
   overflow: hidden;
   margin-bottom: 24px;
+  gap: 24px;
 }
 
 .project-image img {
@@ -404,6 +466,15 @@ body {
 /* ==================== MOBILE (< 768px) ==================== */
 @media (max-width: 768px) {
 
+  .nav-container {
+    grid-template-columns: 1fr auto 1fr;
+    padding: 24px 12px 12px;
+  }
+
+  .nav-links {
+    gap: 40px;
+  }
+
   .hero-section,
   .work-section,
   .connect-section {
@@ -457,4 +528,62 @@ body {
   .projects-grid {
     grid-template-columns: 1fr;
   }
+
+}
+
+/* ==================== MOTION PREFERENCES ==================== */
+/* Applied when motion toggle is OFF (reduce motion) */
+
+/* underline company */
+body.reduce-motion .company-link::after {
+  animation: none;
+  transition: none;
+  width: 0;
+}
+
+body.reduce-motion .company-link:hover::after {
+  width: 0;
+}
+
+/* arrow doesnt move in comp work exp */
+body.reduce-motion .arrow-icon {
+  transform: none;
+  transition: none;
+}
+
+body.reduce-motion .work-company-wrapper:hover .arrow-icon {
+  transform: none;
+}
+
+body.reduce-motion .cta-button .arrow-icon {
+  transform: none;
+}
+
+/* no hover on play images */
+body.reduce-motion .gallery-item img {
+  transform: scale(1);
+  transition: none;
+}
+
+body.reduce-motion .gallery-item:hover img {
+  transform: scale(1);
+}
+
+/* make image not as dark */
+body.reduce-motion .image-overlay {
+  opacity: 1;
+  transition: none;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+body.reduce-motion .gallery-item:hover .image-overlay {
+  opacity: 1;
+}
+
+/* Remove animations / transitions */
+body.reduce-motion * {
+  animation-duration: 0.01ms;
+  animation-iteration-count: 1;
+  transition-duration: 0.01ms;
+  scroll-behavior: auto;
 }
