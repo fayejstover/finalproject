@@ -7,37 +7,24 @@ function navigateToPage(pageName) {
   if (pageName === 'home') {
     homePage.classList.add('active');
     playPage.classList.remove('active');
-  } 
-  else if (pageName === 'play') {
+  } else {
     homePage.classList.remove('active');
     playPage.classList.add('active');
   }
 
-  // Scroll to top
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 navLinks.forEach(link => {
-  link.addEventListener('click', function() {
-    const targetPage = this.getAttribute('data-page');
-    navigateToPage(targetPage);
+  link.addEventListener('click', () => {
+    navigateToPage(link.getAttribute('data-page'));
   });
 });
 
-// CTA Email Button
-const ctaButton = document.getElementById("cta-email");
-
-ctaButton.addEventListener("click", () => {
+// CTA Button
+document.getElementById("cta-email").addEventListener("click", () => {
   window.location.href = "mailto:fayejstover@gmail.com";
 });
 
-
-// Handle browser back/forward buttons
-window.addEventListener('popstate', function(event) {
-  if (event.state && event.state.page) {
-    navigateToPage(event.state.page);
-  }
-});
-
-
+// Load home page by default
 navigateToPage('home');
