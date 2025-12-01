@@ -3,153 +3,106 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Faye Stover - Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-
+  <title>Faye Stover</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 </head>
 <body>
   <!-- Home Page -->
   <div id="home-page" class="page active">
-    <!-- Navigation -->
     <nav class="nav-container">
-      <div class="nav-content">
-        <button class="nav-link" data-page="home">Home</button>
-        <button class="nav-link" data-page="play">Play</button>
-      </div>
+      <button class="nav-link" data-page="home">Home</button>
+      <button class="nav-link" data-page="play">Play</button>
     </nav>
 
-    <!-- Hero Section -->
     <div class="hero-section">
-      <div class="intro-text">
-        <p class="intro-paragraph">Hey, I am Faye. I am a student at the University of Michigan studying Computer Science + UX Design.</p>
+      <p>Hey, I am Faye. I am a student at the University of Michigan studying Computer Science + UX Design.</p>
+
+      <p>Previously, I was designing at <a href="https://www.intuit.com" target="_blank" class="company-link"><span>Intuit</span></a>  on the VEP team focused on their Human in the Loop artificial intelligence system.</p>
+
+      <p>Before Intuit, I led as a campus ambassador for <a href="https://www.figma.com" target="_blank" class="company-link"><span>Figma</span></a>  scaling their education program across universities.</p>
+
+      <p>For a long time, I have been interested in designing for startups, working on individual projects, working on projects for companies like StandardAI and Robinhood.</p>
+
+      <p>I am currently open to full time roles.</p>
+
+      <a href="mailto:fayejstover@gmail.com?subject=Let's build something" class="cta-button" id="cta-email">
+        Lets build something
+        <img src="images/vector 2.jpg" alt="" class="arrow-icon">
+      </a>
       </div>
 
-      <div class="bio-text">
-        <p class="bio-line">
-          <span class="text-muted">Previously, I was designing at </span>
-          <a href="https://www.intuit.com" target="_blank" rel="noopener noreferrer" class="company-link">
-            <span class="company-name">Intuit</span>
-            <span class="underline"></span>
-          </a>
-          <span class="text-muted"> on the VEP team focused on their </span>
-        </p>
-        <p class="bio-line text-muted">Human in the Loop artificial intelligence system.</p>
-      </div>
+<div class="work-section">
+  <h2>Work Experience</h2>
 
-      <div class="bio-text">
-        <p class="bio-line">
-          <span class="text-muted">Before Intuit, I led as a campus ambassador for </span>
-          <a href="https://www.figma.com" target="_blank" rel="noopener noreferrer" class="company-link">
-            <span class="company-name">Figma</span>
-            <span class="underline"></span>
-          </a>
-          <span class="text-muted"> scaling their</span>
-        </p>
-        <p class="bio-line text-muted">education program across universities.</p>
-      </div>
-
-      <div class="bio-text">
-        <p class="intro-paragraph">For a long time, I have been interested in designing for startups, working on individual projects, working on projects for companies like StandardAI and Robinhood.</p>
-      </div>
-
-      <div class="bio-text">
-        <p class="bio-line text-muted">I am currently open to full time roles.</p>
-      </div>
-
-      <button class="cta-button" id="cta-email">
-        <span>Lets build something</span>
-        <svg class="arrow-icon" viewBox="0 0 15 15" fill="none">
-          <path d="M1.41421 13L13.414 1M13.414 1H5.34538M13.414 1L13.4142 9.14286" stroke="#222222" stroke-width="2" stroke-linecap="square" stroke-opacity="0.7"/>
-        </svg>
-      </button>
+  <div class="work-item">
+    <div class="work-company-wrapper">
+      <a href="https://www.intuit.com" target="_blank" class="work-company">Intuit</a>
+      <img src="images/vector 2.jpg" alt="" class="arrow-icon">
     </div>
+    <p class="work-role">Product Design</p>
+    <p class="work-date">June - Aug 2025</p>
+  </div>
 
-    <!-- Work Experience Section -->
-    <div class="work-section">
-      <h2 class="section-title">Work Experience</h2>
-      <div class="work-list">
-        <div class="work-item">
-          <div class="work-company">
-            <a href="https://www.intuit.com" target="_blank" rel="noopener noreferrer" class="company-link">
-              <span class="company-name">Intuit</span>
-              <span class="underline"></span>
-            </a>
-            <svg class="arrow-icon-small" viewBox="0 0 15 15" fill="none">
-              <path d="M1.41421 13L13.414 1M13.414 1H5.34538M13.414 1L13.4142 9.14286" stroke="#222222" stroke-width="2" stroke-linecap="square" stroke-opacity="0.7"/>
-            </svg>
-          </div>
-          <p class="work-role">Product Design</p>
-          <p class="work-date">June - Aug 2025</p>
-        </div>
-        <div class="work-item">
-          <div class="work-company">
-            <a href="https://www.figma.com" target="_blank" rel="noopener noreferrer" class="company-link">
-              <span class="company-name">Figma</span>
-              <span class="underline"></span>
-            </a>
-            <svg class="arrow-icon-small" viewBox="0 0 15 15" fill="none">
-              <path d="M1.41421 13L13.414 1M13.414 1H5.34538M13.414 1L13.4142 9.14286" stroke="#222222" stroke-width="2" stroke-linecap="square" stroke-opacity="0.7"/>
-            </svg>
-          </div>
-          <p class="work-role">Product Design</p>
-          <p class="work-date">Aug 2024 - Aug 2025</p>
-        </div>
-        <div class="work-item">
-          <div class="work-company">
-            <a href="https://www.viget.com" target="_blank" rel="noopener noreferrer" class="company-link">
-              <span class="company-name">Viget</span>
-              <span class="underline"></span>
-            </a>
-            <svg class="arrow-icon-small" viewBox="0 0 15 15" fill="none">
-              <path d="M1.41421 13L13.414 1M13.414 1H5.34538M13.414 1L13.4142 9.14286" stroke="#222222" stroke-width="2" stroke-linecap="square" stroke-opacity="0.7"/>
-            </svg>
-          </div>
-          <p class="work-role">Product Design</p>
-          <p class="work-date">June - Aug 2024</p>
-        </div>
-      </div>
+  <div class="work-item">
+    <div class="work-company-wrapper">
+      <a href="https://www.figma.com" target="_blank" class="work-company">Figma</a>
+      <img src="images/vector 2.jpg" alt="" class="arrow-icon">
     </div>
+    <p class="work-role">Product Design</p>
+    <p class="work-date">Aug 2024 - Aug 2025</p>
+  </div>
 
-    <!-- Connect Section -->
+  <div class="work-item">
+    <div class="work-company-wrapper">
+      <a href="https://www.viget.com" target="_blank" class="work-company">Viget</a>
+      <img src="images/vector 2.jpg" alt="" class="arrow-icon">
+    </div>
+    <p class="work-role">Product Design</p>
+    <p class="work-date">June - Aug 2024</p>
+  </div>
+</div>
+
     <div class="connect-section">
-      <h2 class="section-title">Connect</h2>
+      <h2>Connect</h2>
       <div class="connect-list">
         <div class="connect-item">
-          <p class="connect-label">Linkedin</p>
-          <a href="https://www.linkedin.com/in/fayejstover" target="_blank" rel="noopener noreferrer" class="connect-value">@fayejstover</a>
+          <p>Linkedin</p>
+          <a href="https://www.linkedin.com/in/fayejstover" target="_blank">@fayejstover</a>
         </div>
         <div class="connect-item">
-          <p class="connect-label">email</p>
-          <a href="mailto:fayejstover@gmail.com" class="connect-value">fayejstover@gmail.com</a>
+          <p>Email</p>
+          <a href="mailto:fayejstover@gmail.com">fayejstover@gmail.com</a>
         </div>
       </div>
     </div>
   </div>
 
   <!-- Play Page -->
-  <div id="play-page" class="page">
-    <!-- Navigation -->
-    <nav class="nav-container">
-      <div class="nav-content">
-        <button class="nav-link" data-page="home">Home</button>
-        <button class="nav-link" data-page="play">Play</button>
-      </div>
-    </nav>
-    <div class="play-header">
-      <h1 class="play-title">Selected Work</h1>
-      <p class="play-subtitle">stuff ive created.</p>
+<div id="play-page" class="page">
+  <nav class="nav-container">
+    <button class="nav-link" data-page="home">Home</button>
+    <button class="nav-link" data-page="play">Play</button>
+  </nav>
+
+  <div class="play-header">
+    <h1>Selected Work</h1>
+    <p>When not in Figma, I like sketching places I have traveled and playing around with different mediums.</p>
+  </div>
+
+  <div class="projects-grid">
+    <div class="project-column">
+      <img src="images/col1.png" alt="">
     </div>
-    <div class="projects-grid">
-      <!-- ...projects omitted for brevity, use your project-cards code here... -->
+    <div class="project-column">
+      <img src="images/col2.png" alt="">
     </div>
-    <div class="play-footer">
+    <div class="project-column">
+      <img src="images/col3.png" alt="">
     </div>
   </div>
+</div>
+
   <script src="main.js"></script>
 </body>
 </html>
-
-
